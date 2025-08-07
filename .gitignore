@@ -5,7 +5,10 @@ __pycache__/
 # Sensitive files
 *.env
 data/results.csv
+data/*.csv
+
 
 # VSCode/project stuff
 .vscode/
 .env/
+scripts/check_private.py
