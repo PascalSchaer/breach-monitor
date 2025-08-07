@@ -65,24 +65,27 @@ The sanitized CSV will be created at:
 docs/results_public.csv
 
 ## Folder Structure
+
+```
 breach-monitor/
 │
-├── .git/                   # Git repository data
-├── data/                   # Stores breach results
-│   ├── results.csv         # Private results with emails (gitignored)
-│   └── results_public.csv  # Sanitized public results
+├── .git/                  # Git repository data
+├── data/                  # Stores breach results
+│   ├── results.csv        # Private results with emails (gitignored)
+│   └── results_public.csv # Sanitized public results
 │
-├── docs/                   # Public documentation and CSV samples
-├── notes/                  # Research or planning notes (not tracked in code)
-├── scripts/                # Python scripts
-│   ├── check_private.py    # Checks emails, outputs private CSV
-│   ├── check_public.py     # (optional) Public checker variant (emails redacted in output)
-│   └── sanitize_results.py # Sanitizes private results into public CSV
+├── docs/                  # Public documentation and CSV samples
+├── notes/                 # Research or planning notes (not tracked in code)
+├── scripts/               # Python scripts
+│   ├── check_private.py   # Checks emails, outputs private CSV
+│   ├── check_public.py    # Public checker variant (emails redacted in output)
+│   └── sanitize_results.py# Sanitizes private results into public CSV
 │
-├── .env                    # Private environment variables (gitignored)
-├── .env.example            # Example environment variables file
-├── .gitignore              # Git ignore rules (protects sensitive files)
-├── README.md               # Project documentation
+├── .env                   # Private environment variables (gitignored)
+├── .env.example           # Example environment variables file
+├── .gitignore             # Git ignore rules (protects sensitive files)
+├── README.md              # Project documentation
+```
 
 ## Ethics and Legal Use
 
