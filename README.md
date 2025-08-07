@@ -1,46 +1,48 @@
-\# Breach Monitor
+# Breach Monitor
 
+This project is a **real-world cybersecurity tool** designed to monitor public data breaches using the [Have I Been Pwned (HIBP) API](https://haveibeenpwned.com/API/v3). It checks a list of known email addresses (e.g., from local institutions) and reports if any have appeared in publicly disclosed breaches.
 
+## Purpose
 
-This project monitors public breach and credential exposure data for selected local institutions in Alamosa, Colorado using the HaveIBeenPwned API and passive keyword scraping of public paste sites.
+- Help identify publicly exposed credentials tied to local government, education, or healthcare institutions.
+- Demonstrate practical skills in cybersecurity, automation, and ethical threat monitoring.
+- Provide actionable intelligence for responsible disclosure and outreach.
 
+## Features
 
+- Checks multiple email addresses for breach history
+- Uses environment variables to protect your API key
+- Handles rate limiting and API errors
+- Outputs detailed information about any breaches found
 
-\## Goals
+## How It Works
 
+1. Add your HIBP API key to a `.env` file  
+2. Add email addresses you want to check to the script  
+3. Run the script using Python  
+4. Breach info (if any) is printed to the terminal  
 
+## Project Structure
 
-\- Track breaches related to `@adams.edu`, `@slvhospital.org`, and similar local domains
+breach-monitor/
+├── data/ # (Optional) Store results here
+├── notes/ # Research notes, future plans
+├── scripts/ # Python scripts, including the main checker
+├── .env # Your HIBP API key (NOT committed)
+├── .gitignore # Ignores .env and temp files
+├── README.md # You're reading it!
 
-\- Automatically flag known email addresses found in breaches
+## Disclaimer
+This project is for educational and responsible disclosure purposes only.
+Do not use this tool to target or harass individuals or organizations.
 
-\- Passively monitor public dumps for keywords linked to local exposure
+## Future Improvements
+Export results to .json or .csv
 
-\- Showcase ethical OSINT and threat intelligence skills
+Add domain or paste checking
 
+Support for automation/scheduling
 
-
-\## Tools
-
-
-
-\- Python
-
-\- HaveIBeenPwned API
-
-\- Pastebin (read-only scraping)
-
-\- CSV for results
-
-\- GitHub for publishing
-
-
-
-\## Ethics
-
-
-
-This project only uses \*\*publicly available\*\* data and \*\*does not interact with or exploit\*\* any credentials, accounts, or sensitive content. No illegal activity is conducted or supported.
-
-
-
+## Author
+Pascal Schaer – Cybersecurity student and researcher
+GitHub: github.com/PascalSchaer
