@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+
+# Sensitive files
+*.env
+data/results.csv
+
+# VSCode/project stuff
+.vscode/
+.env/
