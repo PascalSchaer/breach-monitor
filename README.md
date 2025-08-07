@@ -45,9 +45,9 @@ cd breach-monitor
 pip install -r requirements.txt
 
 3.Create a .env file from the example:
-# Windows
+Windows:
 copy .env.example .env
-# macOS/Linux
+:macOS/Linux
 cp .env.example .env     
 
 4. Add your HIBP API key to .env:
